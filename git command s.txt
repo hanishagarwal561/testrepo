@@ -1,0 +1,1841 @@
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git status
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git log
+commit 11f9bf0780cd83d7e7d43f48790676711ac4fde0 (HEAD -> master)
+Author: hanishsoftdevl1 <hanishkumar561@gmail.com>
+Date:   Sun Jan 9 17:19:17 2022 +0530
+
+    new added and deleted file
+
+commit be71af81359c8640b5b6c075181916cf8c2eb801
+Author: hanishsoftdevl1 <hanishkumar561@gmail.com>
+Date:   Sun Jan 9 17:14:44 2022 +0530
+
+    now skipped the staging area
+
+commit fa088e57d88419b4f9c136dd0dec8f31ae083a8b
+Author: hanishsoftdevl1 <hanishkumar561@gmail.com>
+Date:   Sun Jan 9 17:13:36 2022 +0530
+
+    now commit the file named newf1
+
+commit 0a25449e053f07e04eebbe0282ed3a373dabb7da
+Author: hanishsoftdevl1 <hanishkumar561@gmail.com>
+Date:   Sun Jan 9 17:10:05 2022 +0530
+
+    now file f2 deleted or removed here by git rm  command
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit --amand
+error: unknown option `amand'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit --amand
+error: unknown option `amand'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit --amand
+error: unknown option `amand'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git commit --amand
+error: unknown option `amand'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git commit --amand
+error: unknown option `amand'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git status
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git status
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add .
+warning: LF will be replaced by CRLF in git status.
+The file will have its original line endings in your working directory
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git status
+        modified:   newf1.txt
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git restore --staged newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git restore --staged newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout --newf1.txt
+error: unknown option `newf1.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout --newf1.txt
+error: unknown option `newf1.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git status
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit -m "kkkk"
+[master c06fab9] kkkk
+ 2 files changed, 114 insertions(+), 12 deletions(-)
+ create mode 100644 git status
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newf1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -- newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$  git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -f
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -f
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   e1.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -f
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git st
+git: 'st' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        reset
+        stage
+        stash
+        svn
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git config --global alias.sts status
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git sts
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git config --global alias.cmm commit
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git sts
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git cmm
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ ls
+ a1.log   b1.log.txt   dir/   e1.log  'git status'   newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git cmm
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout -b newbranch
+Switched to a new branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git status
+On branch newbranch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    a1.log
+        modified:   e1.log
+        modified:   newf1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+D       a1.log
+M       e1.log
+M       newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    a1.log
+        modified:   e1.log
+        modified:   newf1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout master
+Already on 'master'
+D       a1.log
+M       e1.log
+M       newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+D       a1.log
+M       e1.log
+M       newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+D       a1.log
+M       e1.log
+M       newf1.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    a1.log
+        modified:   e1.log
+        modified:   newf1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit -m "cc"
+[master 46a114f] cc
+ 3 files changed, 2 insertions(+), 3 deletions(-)
+ delete mode 100644 a1.log
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout master
+Already on 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout newbranch
+Already on 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout newbranch
+Already on 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+M       b1.log.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   b1.log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git commit -m "cczzzzz"
+[master d2d45e3] cczzzzz
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 f3.txt
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout newbranch
+Already on 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout newbranch
+Already on 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout newbranch
+Switched to branch 'newbranch'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        e1.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        e1.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        e1.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout newbranch
+Already on 'newbranch'
+M       e1.log
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        e1.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git merge newbranch
+Already up to date.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch --merge
+* newbranch
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch --nonmerge
+error: unknown option `nonmerge'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch -- nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch -- merge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch --merge
+  merge
+* newbranch
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch --nonmerge
+error: unknown option `nonmerge'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout n1
+error: pathspec 'n1' did not match any file(s) known to git
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch -d newbranch
+error: Cannot delete branch 'newbranch' checked out at 'C:/Users/Djubo/Desktop/hanish'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ branch
+bash: branch: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch
+  master
+  merge
+* newbranch
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        e1.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git commit "vv"
+error: pathspec 'vv' did not match any file(s) known to git
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git status
+On branch newbranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   e1.log
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git commit -m"vv"
+[newbranch 19fee30] vv
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git status
+On branch newbranch
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch
+  master
+  merge
+* newbranch
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git merge newbranch
+Auto-merging e1.log
+CONFLICT (content): Merge conflict in e1.log
+Automatic merge failed; fix conflicts and then commit the result.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git checkout newbranch
+error: you need to resolve your current index first
+e1.log: needs merge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   e1.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git commit m "za"
+fatal: cannot do a partial commit during a merge.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   e1.log
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git commit -m "za"
+[master 9bf945b] za
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout master
+Already on 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git merge newbranch
+Already up to date.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git branch -d newbranch
+Deleted branch newbranch (was 19fee30).
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git branch
+* master
+  merge
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+On branch newbranch
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git branch
+  master
+  merge
+* newbranch
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+$ git checkout master
+Switched to branch 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git merge newbranch
+Auto-merging e1.log
+CONFLICT (content): Merge conflict in e1.log
+Automatic merge failed; fix conflicts and then commit the result.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git checkout newbranch
+error: you need to resolve your current index first
+e1.log: needs merge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   e1.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git add .
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git commit m "za"
+fatal: cannot do a partial commit during a merge.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   e1.log
+
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+$ git commit -m "za"
+[master 9bf945b] za
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git checkout master
+Already on 'master'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git merge newbranch
+Already up to date.
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git branch -d newbranch
+Deleted branch newbranch (was 19fee30).
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ git branch
+* master
+  merge
+  nonmerge
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git status
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ On branch newbranch
+bash: On: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ nothing to commit, working tree clean
+bash: nothing: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git branch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   master
+bash: master: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   merge
+bash: merge: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ * newbranch
+bash: b1.log.txt: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   nonmerge
+bash: nonmerge: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (newbranch)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git checkout master
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Switched to branch 'master'
+bash: Switched: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git status
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ On branch master
+bash: On: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ nothing to commit, working tree clean
+bash: nothing: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git merge newbranch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Auto-merging e1.log
+bash: Auto-merging: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ CONFLICT (content): Merge conflict in e1.log
+bash: syntax error near unexpected token `content'
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Automatic merge failed; fix conflicts and then commit the result.
+bash: Automatic: command not found
+bash: fix: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git checkout newbranch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ error: you need to resolve your current index first
+bash: error:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ e1.log: needs merge
+bash: e1.log:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git status
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ On branch master
+bash: On: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ You have unmerged paths.
+bash: You: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   (fix conflicts and run "git commit")
+bash: fix: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   (use "git merge --abort" to abort the merge)
+bash: use: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Unmerged paths:
+bash: Unmerged: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   (use "git add <file>..." to mark resolution)
+bash: use: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$         both modified:   e1.log
+bash: both: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ no changes added to commit (use "git add" and/or "git commit -a")
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git add .
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git commit m "za"
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ fatal: cannot do a partial commit during a merge.
+bash: fatal:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git status
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ On branch master
+bash: On: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ All conflicts fixed but you are still merging.
+bash: All: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   (use "git commit" to conclude merge)
+bash: use: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Changes to be committed:
+bash: Changes: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$         modified:   e1.log
+bash: modified:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master|MERGING)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git commit -m "za"
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ [master 9bf945b] za
+bash: [master: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git status
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ On branch master
+bash: On: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ nothing to commit, working tree clean
+bash: nothing: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git checkout master
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Already on 'master'
+bash: Already: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git merge newbranch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Already up to date.
+bash: Already: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git branch -d newbranch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Deleted branch newbranch (was 19fee30).
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ git branch
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ * master
+bash: b1.log.txt: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   merge
+bash: merge: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   nonmerge
+bash: nonmerge: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: b1.log.txt: command not found
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   merge
+bash: merge: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$   nonmerge
+bash: nonmerge: command not found
+bash: bash:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $   merge
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: merge: command not found
+bash: bash:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $   nonmerge
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: nonmerge: command not found
+bash: bash:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: syntax error near unexpected token `('
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ $
+> bash: $: command not found
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> All conflicts fixed but you are still merging.bash: nonmerge: command not found
+> bash: bash:: command not found
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: syntax error near unexpected token `('
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ $
+> bash: $: command not found
+>
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: $: command not found
+bash: bash:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: syntax error near unexpected token `('
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ bash: syntax error near unexpected token `('
+> >
+> > Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> > $ $
+> > bash: $: command not found
+> >
+> bash: nonmerge: command not found
+> bash: bash:: command not found
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: syntax error near unexpected token `('
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ $
+> bash: $: command not found
+>
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: $: command not found
+bash: bash:: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $
+bash: $: command not found
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ bash: syntax error near unexpected token `('
+>
+> Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> $ $ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+bash: syntax error near unexpected token `('
+
+Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+$ $ bash: syntax error near unexpected token `('
+> >
+> > Djubo@DESKTOP-CPIMS92 MINGW64 ~/Desktop/hanish (master)
+> > $ $
+> > bash: $: command not found
+> >
+>
